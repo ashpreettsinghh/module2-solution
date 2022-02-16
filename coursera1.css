@@ -1,0 +1,114 @@
+
+    #sus
+    {
+        
+        background-color:lightpink;
+        float: right;
+        
+        
+        border: 2px solid black;
+    }
+    #beef
+    {
+        background-color:red;
+        float: right;
+        border: 2px solid black;
+    }
+    #chicken
+    {
+        background-color:yellow;
+        float: right;
+        border: 2px solid black;
+    }
+    
+    span {
+        font-size: 32px;
+    }
+
+    
+    
+    
+    .grid-item
+    {
+        border:2px solid black;
+        background-color: grey;
+        
+        
+        }
+    
+     .grid-item1
+    {
+        
+        border:2px solid black;
+        background-color: grey;
+        
+        }
+    .grid-special {
+       
+        width:100%;
+        background-color: grey;
+        border:2px solid black;
+        
+    }
+    
+    
+    @media (min-width:992px)
+    {
+        .grid-container{
+            display: grid;
+       grid-template-columns: 33% 33% 33%;
+           grid-column-gap: 10px;
+           grid-row-gap:10px;
+           
+           }
+        .grid-special {
+            margin-top:10px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            display:none;
+        }
+      }
+   
+   @media (min-width:767px) and (max-width:991px)
+    {
+        .grid-container{
+           
+            display: grid;
+       grid-template-columns: 50% 50% 50%;;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom:10px;
+            
+            }
+    
+        
+        .grid-item1{
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+           margin-bottom:10px;
+           width:100%;
+           
+          
+     }
+            
+       
+     }
+    @media (max-width:767px)
+    {
+        .grid-container{
+            float:left;
+            display: grid;
+            grid-template-columns:100%;
+            grid-row-gap: 20px;
+            
+            
+        }
+        .grid-special {
+            display:none;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+    }
+    
+    
+
